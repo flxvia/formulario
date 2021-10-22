@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form name="satisfacao" action="form.php">
+    <h3>O que você achou do site?</h3>
+    <div class="satisfacao">
+    <input type="radio" value="mb">Muito bom
+    <input type="radio" value="b">Bom
+    <input type="radio" value="r">Regular
+    <input type="radio" value="ul">Um lixo
+    </div>
+    <br>
+    <h3>Qual a seção que você mais gostou?</h3>
+    <div class="satisfacao">
+    <select name="secoes">
+        <option>Em cartaz</option>
+        <option>Trilha sonora</option>
+        <option>Galeria de fotos</option>
+        <option>Bilheteria</option>
+        <option>Outra</option>
+    </select>
+    Outra: <input type="text" name="secao" size="40" maxlength="20">
+    </div>
+    <br/>
+    <h3>Digite seus comentários no espaço abaixo:</h3>
+    <div class="satisfacao">
+    <textarea name="coment" cols="50" rows="10"></textarea>
+    <br/>
+    </div>
+    <h3>Diga-nos como entrar em contato com você:</h3>
+    <div class="satisfacao">
+    Nome <input type="text" name="nome" size="40" maxlength="20">
+    <br/>
+    E-mail <input type="text" name="email" size="40" maxlength="20">
+    <br/>
+    Fone <input type="text" name="fone" size="40" maxlength="20">
+    <br/>
+    FAX <input type="text" name="fax" size="40" maxlength="20">
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <div class="satisfacao">
+    <input type="checkbox">Quero receber as novidades do site por e-mail
+    </div>
+    <br/>
+    <br/></form>
+    <form name="envio" action="form.php">
+    <input type="submit" value="Enviar dados">
+    <input type="reset" value="Limpar formulário">
+    </form>
+</body>
+</html>
